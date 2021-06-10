@@ -1,4 +1,6 @@
 // 6/9/2021 v1.0
+// v1.1 - 1mm in on holes and more of a header for the zip-tie holes
+// v1.2 - Minor adjustments to the placement of the mounting screwholes - moved the cable hole up a bit
 
 // Bumper for a Voltaic Solar Panel (2 part design)
 // By Chip McClelland and Sanjna Jotwani
@@ -21,19 +23,25 @@ difference() {          // The command tells OpenSCAD to create a solid object t
     roundedcube([133,27.42,0], false, 3, "ymax");
 
     // Green is the negative piece
-    translate(v = [-56.5, -12.42, 3])
+    translate(v = [-56.5, -14.42, 3])
     color("Green")
     roundedcube([115,22.42,0], false, 3, "ymax");
+    
+    // One hole in the middle for the lead wire
+    // Brown is the holes for the screws
+    translate(v = [0, 2, -10])
+    color("brown")
+    cylinder(h=10,r=6,center="true");
 
     // Blue are the holes for the screws
-    translate(v = [-49, 0, -10])
+    translate(v = [-49.6, 0, -10])
     color("blue")
-    cylinder(h=10,r=2.5,center="true");
+    cylinder(h=10,r=2.7,center="true");
 
     // Blue are the holes for the screws
-    translate(v = [49, 0, -10])
+    translate(v = [49.6, 0, -10])
     color("blue")
-    cylinder(h=10,r=2.5,center="true");
+    cylinder(h=10,r=2.7,center="true");
     
     // You could add more holes here for the zip ties - just copy the 4 lines above, change the color, and paste below
     // Then change the "translate" values to put some holes across the top

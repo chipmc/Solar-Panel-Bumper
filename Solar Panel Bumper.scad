@@ -1,6 +1,7 @@
 // 6/9/2021 v1.0
 // v1.1 - 1mm in on holes and more of a header for the zip-tie holes
 // v1.2 - Minor adjustments to the placement of the mounting screwholes - moved the cable hole up a bit
+// v1.3 - Added holes for the zip ties
 
 // Bumper for a Voltaic Solar Panel (2 part design)
 // By Chip McClelland and Sanjna Jotwani

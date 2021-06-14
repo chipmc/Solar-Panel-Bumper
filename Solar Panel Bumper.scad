@@ -45,6 +45,36 @@ difference() {          // The command tells OpenSCAD to create a solid object t
     
     // You could add more holes here for the zip ties - just copy the 4 lines above, change the color, and paste below
     // Then change the "translate" values to put some holes across the top
+    
+    // Purple are the holes for the zip-ties
+    translate(v = [55, 13, -10])
+    color("purple")
+    cylinder(h=50,r=2.7,center="true");
+
+    // Purple are the holes for the zip-ties
+    translate(v = [35, 13, -10])
+    color("purple")
+    cylinder(h=50,r=2.7,center="true");
+
+    // Purple are the holes for the zip-ties
+    translate(v = [15, 13, -10])
+    color("purple")
+    cylinder(h=50,r=2.7,center="true");
+    
+    // Purple are the holes for the zip-ties
+    translate(v = [-55, 13, -10])
+    color("purple")
+    cylinder(h=50,r=2.7,center="true");
+    
+    // Purple are the holes for the zip-ties
+    translate(v = [-35, 13, -10])
+    color("purple")
+    cylinder(h=50,r=2.7,center="true");
+    
+    // Purple are the holes for the zip-ties
+    translate(v = [-15, 13, -10])
+    color("purple")
+    cylinder(h=50,r=2.7,center="true");
 }
 
 
